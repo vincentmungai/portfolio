@@ -450,7 +450,7 @@ var actionbardata = {"siteID":"230298139","postID":"44","siteURL":"http:\/\/vinc
 					name='g44-firstname'
 					id='g44-firstname'
 					value=''
-					class='name  grunion-field' placeholder=' '
+					class='name  grunion-field' placeholder=' First name (required)  '
 					required aria-required='true'style="border-radius: 5px;"  />
 
 			<div class="notched-label">
@@ -459,8 +459,8 @@ var actionbardata = {"siteID":"230298139","postID":"44","siteURL":"http:\/\/vinc
 					<label
 						for="g44-firstname"
 						class="notched-label__label "
-						style=""
-					>First name<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
+						
+					></label>
 				</div>
 				<div class="notched-label__trailing"></div>
 			</div>	</div>
@@ -476,7 +476,7 @@ var actionbardata = {"siteID":"230298139","postID":"44","siteURL":"http:\/\/vinc
 					name='g44-lastname'
 					id='g44-lastname'
 					value=''
-					class='name  grunion-field' placeholder=' '
+					class='name  grunion-field' placeholder=' Last name (required) '
 					required aria-required='true'style="border-radius: 5px;"  />
 
 			<div class="notched-label">
@@ -486,7 +486,7 @@ var actionbardata = {"siteID":"230298139","postID":"44","siteURL":"http:\/\/vinc
 						for="g44-lastname"
 						class="notched-label__label "
 						style=""
-					>Last name<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
+					></label>
 				</div>
 				<div class="notched-label__trailing"></div>
 			</div>	</div>
@@ -502,7 +502,7 @@ var actionbardata = {"siteID":"230298139","postID":"44","siteURL":"http:\/\/vinc
 					name='g44-email'
 					id='g44-email'
 					value=''
-					class='email  grunion-field' placeholder=' '
+					class='email  grunion-field' placeholder=' Email (required)'
 					required aria-required='true'style="border-radius: 5px;"  />
 
 			<div class="notched-label">
@@ -512,19 +512,33 @@ var actionbardata = {"siteID":"230298139","postID":"44","siteURL":"http:\/\/vinc
 						for="g44-email"
 						class="notched-label__label "
 						style=""
-					>Email<span class="grunion-label-required" aria-hidden="true">(required)</span></label>
+					></label>
 				</div>
 				<div class="notched-label__trailing"></div>
 			</div>	</div>
 	</div>
 
+<style>
+	input{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		font-family: inter, sans-serif;
+		font-weight: bold;
+		font-size: 15.2602px;
+		border-style: solid;
 
+		&::placeholder{
+		color: #eee;
+	}
+	}
+	
+</style>
 
 <div class='contact-form__inset-label-wrap'>
 
 <div style="--jetpack--contact-form--border-radius: 5px;" class='grunion-field-textarea-wrap grunion-field-wrap'  >
 <textarea
-		                style='border-radius: 5px;'
+		                style='border-radius: 5px; width: 100%;'
 		                name='g44-message'
 		                id='contact-form-comment-g44-message'
 		                rows='20' class='textarea  grunion-field' placeholder=' ' ></textarea>
