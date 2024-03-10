@@ -78,3 +78,18 @@ p.has-text-align-right[style*="writing-mode:vertical-rl"] {
 .wp-block-navigation .wp-block-navigation-item {
     background-color: inherit;
 }
+.wp-block-button__link{
+    background-color: #F02D00 !important;
+}
+.wp-block-button__link:hover{
+    background-color: white !important;
+    color: black !important;
+    transition: all 0.4s ease;
+}
+.wp-block-button__link{
+    transition: all 0.4s ease;
+}
+.wp-element-caption 
+{
+    color: #F02D00 !important;
+}
