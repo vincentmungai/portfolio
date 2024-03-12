@@ -93,3 +93,36 @@ p.has-text-align-right[style*="writing-mode:vertical-rl"] {
 {
     color: #F02D00 !important;
 }
+
+.text-animate{
+    animation-name: text-reveal;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.17,.67,.95,.88);
+}
+@keyframes text-reveal {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #F02D00;
+    border-radius: 1000px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s ease-out;
+}
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left ;
+}
