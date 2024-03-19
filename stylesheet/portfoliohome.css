@@ -2594,9 +2594,7 @@ textarea.w-input, textarea.w-select {
     min-width: auto;
     cursor: pointer;
 }
-.image-block:hover{
-    transform: scaleX(1.1);
-}
+
 
 
 .nav-menu {
